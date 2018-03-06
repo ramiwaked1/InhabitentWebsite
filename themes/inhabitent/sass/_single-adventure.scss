@@ -1,0 +1,23 @@
+/*--------------------------------------------------------------
+# Single Adventure Page
+--------------------------------------------------------------*/
+
+.single-adventure {
+  .adventure-img {
+    width: 100%;
+    img {
+      max-width: 100%;
+      height: auto;
+    }
+  }
+
+  .adventure-desc {
+    padding-top: 2.5rem;
+    margin: 0 auto;
+    width: 800px;
+    h2 {
+      font-weight: normal;
+      font-size: 1.2rem;
+    }
+  }
+}

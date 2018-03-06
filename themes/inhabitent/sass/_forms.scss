@@ -1,0 +1,57 @@
+/*--------------------------------------------------------------
+# Forms
+--------------------------------------------------------------*/
+
+/* Buttons */
+
+button,
+input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+	color: #fff;
+	font-family: $font_accent;
+	text-transform: uppercase;
+	background-color: $color_green;
+	padding: .75rem 1.75rem;
+	border: 0;
+	&:hover {
+		background-color: $color__text-main;
+	}
+}
+
+/* Fields */
+
+input[type="text"],
+input[type="email"],
+input[type="url"],
+input[type="password"],
+textarea {
+	background-color: $color_grey;
+	text-transform: none;
+	border: 1px solid #ccc;
+	margin-top: 1.4rem;
+	&:focus {
+		color: #111;
+	}
+}
+
+input[type="text"],
+input[type="email"],
+input[type="url"],
+input[type="password"],
+input[type="search"] {
+	padding: 3px;
+}
+
+textarea {
+	padding-left: 3px;
+	width: 100%;
+}
+
+label {
+	font-family: $font_accent;
+	text-transform: uppercase;
+	span {
+		color: $color_orange;
+	}
+}

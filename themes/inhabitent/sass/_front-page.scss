@@ -1,0 +1,167 @@
+/*--------------------------------------------------------------
+# Front Page
+--------------------------------------------------------------*/
+
+/* Base */
+
+.home {
+  h2 {
+    text-align: center;
+    font-weight: lighter;
+    margin-bottom: 3.5rem;
+    letter-spacing: 2px;
+  }
+}
+
+/* Hero Area */
+
+.hero {
+  width: 177.5%;
+  margin-left: -16%;
+  height: 100vh;
+  padding-top: 0;
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../../images/home-hero.jpg);
+  background-size: contain, cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  h2 {
+    font-size: 0;
+    margin: 0;
+  }
+}
+
+/* Shop Stuff */
+
+.product-feed {
+  padding-bottom: 0;
+  ul {
+    display: flex;
+    justify-content: space-between;;
+  }
+  li {
+    border: $base_solid_border;
+    border-top-width: 5px;
+    text-align: center;
+    padding: 1rem .5rem;
+    width: 260px;
+    &:hover {
+      border-color: $color_orange;
+    }
+  }
+  img {
+    width: 70px;
+    margin-bottom: 1rem;
+  }
+}
+
+/* Inhabitent Journal */
+
+.journal-feed {
+  ul {
+    display: flex;
+    justify-content: space-between;
+  }
+  li {
+    width: 355px;
+    overflow: hidden;
+  }
+  img {
+    height: 245px;
+    width: auto;
+    display: block;
+  }
+  .post-wrap {
+    border: $base_solid_border;
+    border-top-width: 5px;
+    padding: 1rem;
+    h3 {
+      margin-bottom: 1rem;
+      line-height: 1.1;
+    }
+    p {
+      font-size: .5rem;
+      margin-bottom: .3rem;
+    }
+  }
+}
+
+/* Latest Adventure */
+
+.adventure {
+  ul {
+    padding: 0;
+    margin-bottom: 2.5rem;
+  }
+  li {
+    width: 270px;
+    height: 270px;
+    margin-left: 20px;
+    color: white;
+    position: relative;
+    overflow: hidden;
+    float: left;
+    &:first-child{
+      width: 540px;
+      height: 540px;
+      margin: 0;
+      img {
+        min-height: 640px;
+      }
+      h3 {
+        font-size: 3rem;
+      }
+    }
+    &:nth-child(2){
+      width: 560px;
+      height: 250px;
+      margin: 0 0 20px 20px;
+      h3 {
+        font-size: 2.5rem;
+      }
+    }
+  }
+  .adventure-img {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+  }
+  img {
+    width: auto;
+    max-height: 400px;
+    position: absolute;
+    top: 75%;
+    left: 50%;
+    transform: translate(-50%, -90%);
+  }
+  .headline {
+    position: absolute;
+    top: 0;
+    height: 100%;
+    padding: 3rem 1.5rem;
+    background-color: rgba(0, 0, 0, 0.4);
+  }
+  h3 {
+    font: 1.5rem $font__main;
+    text-transform: none;
+    margin-bottom: 2.5rem;
+    a {
+      color: white;
+      &:hover {
+        color: $color_yellow;
+      }
+    }
+  }
+  .white-link {
+    a {
+      color: white;
+      border: 1px solid white;
+    }
+  }
+  .green-link {
+    a {
+    font-size: 1.1rem;
+    }
+  }
+}

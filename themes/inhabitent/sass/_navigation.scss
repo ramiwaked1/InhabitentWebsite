@@ -1,0 +1,197 @@
+/*--------------------------------------------------------------
+# Navigation
+--------------------------------------------------------------*/
+
+/* Links */
+
+a {
+	color: $color_green;
+	text-decoration: none;
+
+	&:hover,
+	&:focus,
+	&:active {
+		color: $color__link-hover;
+	}
+	&:focus {
+		outline: thin dotted;
+	}
+	&:hover,
+	&:active {
+		outline: 0;
+	}
+}
+
+/* Menus */
+
+.site-header {
+	background-color: rgba(255,255,255,0.6);
+	font-family: $font_accent;
+	text-transform: uppercase;
+	height: 50px;
+	width: 100%;
+	position: fixed;
+	z-index: 1;
+	border-bottom: $base_solid_border;
+	.container {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+	.site-branding {
+		height: 33px;
+		width: 50px;
+		background-image: url('../../images/inhabitent-logo-tent.svg');
+		background-size: cover;
+		a{
+			display: block;
+			height: 33px;
+			width: 50px;
+		}
+	}
+	::-webkit-input-placeholder { /* WebKit, Blink, Edge */
+		color: $color_yellow;
+	}
+	:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+		color: $color_yellow;
+	}
+	::-moz-placeholder { /* Mozilla Firefox 19+ */
+		color: $color_yellow;
+	}
+	:-ms-input-placeholder { /* Internet Explorer 10-11 */
+		color: $color_yellow;
+	}
+}
+
+.reverse-nav {
+	background-color: transparent;
+	position: absolute;
+	border: 0;
+	a {
+		color: white;
+		text-shadow: 4px 4px 5px rgba(0, 0, 0, 0.5);
+		&:hover{
+			color: $color_yellow;
+		}
+	}
+	.site-branding {
+		background-image: url('../../images/inhabitent-logo-tent-white.svg');
+	}
+	input[type=search] {
+		color: white;
+	}
+}
+
+.main-navigation {
+	display: flex;
+	ul {
+		display: none;
+		list-style: none;
+		margin: 0;
+		padding-left: 0;
+		ul {
+			box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
+			float: left;
+			position: absolute;
+			top: $base__space-unit;
+			left: -999em;
+			z-index: 99999;
+			ul {
+				left: -999em;
+				top: 0;
+			}
+			li {
+				&:hover > ul,
+				&.focus > ul {
+					left: 100%;
+				}
+			}
+			a {
+				width: 200px;
+			}
+			:hover > a,
+			.focus > a {
+			}
+			a:hover,
+			a.focus {
+			}
+		}
+		li:hover > ul,
+		li.focus > ul {
+			left: auto;
+		}
+	}
+	li {
+		display: inline-block;
+		margin-right: 1.2rem;
+
+		&:hover > a,
+		&.focus > a {
+		}
+	}
+	a {
+		display: block;
+		text-decoration: none;
+	}
+	.current_page_item > a,
+	.current-menu-item > a,
+	.current_page_ancestor > a {
+	}
+	fieldset {
+		border: 0;
+		padding: 0;
+		margin: 0;
+	}
+	.show-search {
+		border: 0;
+		padding: 0;
+		margin: 0;
+		display: inline-block;
+		cursor: pointer;
+		font-size: 1rem;
+	}
+	input[type=search] {
+		font: 1rem $font_accent;
+		background-color: transparent;
+		text-transform: uppercase;
+		border: 0;
+		padding-left: 1rem;
+		margin: 0;
+		width: 200px;
+		display: none;
+		&:focus {
+			outline: 0;
+		}
+	}
+}
+
+/* Small menu. */
+.menu-toggle,
+.main-navigation.toggled ul {
+	display: block;
+}
+@media screen and (min-width: 37.5em) {
+	.menu-toggle {
+		display: none;
+	}
+	.main-navigation ul {
+		display: block;
+	}
+}
+.comment-navigation,
+.posts-navigation,
+.post-navigation {
+	.site-main & {
+		margin: 0 0 $base__space-unit;
+		overflow: hidden;
+	}
+	.nav-previous {
+		float: left;
+		width: 50%;
+	}
+	.nav-next {
+		float: right;
+		text-align: right;
+		width: 50%;
+	}
+}

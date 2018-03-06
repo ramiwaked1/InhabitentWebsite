@@ -1,0 +1,74 @@
+/*--------------------------------------------------------------
+# Elements
+--------------------------------------------------------------*/
+
+html {
+	box-sizing: border-box;
+	@include font-size(1);
+}
+
+*,
+*:before,
+*:after { /* Inherit box-sizing to make it easier to change the property for components that leverage other behavior; see http://css-tricks.com/inheriting-box-sizing-probably-slightly-better-best-practice/ */
+	box-sizing: inherit;
+}
+
+body {
+	background: $color__background-body; /* Fallback for when there is no custom background color defined. */
+	position: relative;
+	height: 100%;
+}
+
+blockquote, q {
+	quotes: "" "";
+
+	&:before,
+	&:after {
+		content: "";
+	}
+}
+
+hr {
+	background-color: $color__background-hr;
+	border: 0;
+	height: 1px;
+	margin-bottom: $base__space-unit;
+}
+
+ul {
+	list-style: none;
+	padding: 0;
+}
+
+ol {
+	list-style: decimal;
+}
+
+li > ul,
+li > ol {
+	border-top: $base_solid_border;
+	padding: 1.5rem 0;
+	margin-left: 4rem;
+}
+
+p {
+	margin-top: 0;
+}
+
+dt {
+	font-weight: bold;
+}
+
+dd {
+	margin: 0 $base__space-unit $base__space-unit;
+}
+
+img {
+	max-height: 100%; /* Adhere to container width. */
+	height: auto; /* Make sure images are scaled correctly. */
+}
+
+table {
+	margin: 0 0 $base__space-unit;
+	width: 100%;
+}

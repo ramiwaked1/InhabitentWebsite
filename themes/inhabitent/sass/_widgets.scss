@@ -1,0 +1,37 @@
+/*--------------------------------------------------------------
+# Widgets
+--------------------------------------------------------------*/
+
+.widget {
+	margin: 0 0 $base__space-unit;
+
+	/* Make sure select elements fit in widgets. */
+	select {
+		max-width: 100%;
+	}
+	h2 {
+		font-size: $base__space-unit;
+		margin-bottom: 1.4rem;
+	}
+}
+
+/* Search widget. */
+.widget_search .search-submit {
+	display: none;
+}
+
+/* Business Hours Widget */
+.day-of-week{
+	font-weight: bold;
+}
+
+/* Contact Info Widget */
+.contact-info-widget-class {
+	p {
+		display: flex;
+	}
+	i {
+		margin-right: .5rem;
+		width: 1rem;
+	}
+}

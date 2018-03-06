@@ -1,0 +1,76 @@
+/*--------------------------------------------------------------
+# Single Journal Post
+--------------------------------------------------------------*/
+
+.single-post {
+  .entry-footer {
+    font-family: $font_accent;
+    text-transform: uppercase;
+    margin-bottom: 2.5rem;
+    a {
+      color: $color_green;
+    }
+  }
+  .cat-links {
+    margin-right: 1.5rem;
+  }
+  .social-wrap {
+    margin-bottom: 3rem;
+  }
+  .comment-list {
+    padding: 0;
+  }
+  .comment {
+    border-bottom: $base_solid_border;
+    margin-bottom: 1rem;
+    .children {
+      .comment {
+        border: 0;
+      }
+    }
+  }
+  .comment-body {
+    display: flex;
+  }
+  .comment-author-avatar {
+    margin-right: 1.5rem;
+    img {
+      border-radius: 50%;
+    }
+  }
+  .comment-author {
+    font-weight: bold;
+  }
+  .comment-metadata {
+    color: $color_med_grey;
+  }
+  .comment-content {
+    width: 100%;
+    padding-bottom: 1.5rem;
+    .comment-meta {
+      margin-bottom: 1rem;
+    }
+  }
+  #respond {
+    h3 {
+      font-size: 1.75rem;
+      margin-bottom: 1.75rem;
+    }
+    label {
+      display: block;
+    }
+    .comment-form-author {
+      display: inline-block;
+      width: 49%;
+    }
+    .comment-form-email {
+      display: inline-block;
+      width: 49%;
+      margin-left: 10px;
+    }
+    input[id=url], input[id=email], input[id='author'] {
+      width: 100%;
+      margin-top: 1rem;
+    }
+  }
+}
