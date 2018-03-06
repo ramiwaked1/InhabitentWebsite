@@ -1,6 +1,6 @@
 # Project 4: Inhabitent Wordpress Website
-![alt text](https://github.com/ramiwaked1/InstanewsApp/blob/master/assets/images/instanews-desktop-initial.png)
-![alt text](https://github.com/ramiwaked1/InstanewsApp/blob/master/assets/images/instanews-desktop-photos.png)
+![alt text](https://github.com/ramiwaked1/InhabitentWebsite/tree/master/themes/inhabitent/images/)
+![alt text](https://github.com/ramiwaked1/InhabitentWebsite/tree/master/themes/inhabitent/images/)
 
 For Project 4, I created a multi-page website with a blog for a camping supply company called Inhabitent Camping Supply Co. using WordPress as a content management system. We had to create the theme from scratch with just a starter pack with no plugins or CSS at all.
 
